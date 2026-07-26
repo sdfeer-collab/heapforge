@@ -1,0 +1,20 @@
+# ===== 构建产物 / Build artifacts =====
+build/
+*.o
+*.a
+*.dSYM/
+
+# ===== 运行时生成文件 / Runtime-generated files =====
+*.pool
+*.save
+*.log
+*.html
+*.json
+*.csv
+
+# ===== 系统文件 / OS junk =====
+.DS_Store
+
+# ===== IDE / 编辑器 =====
+.vscode/
+.idea/
