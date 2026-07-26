@@ -193,7 +193,7 @@ Reproduce on your target machine by running `heapforge_demo`.
 
 ## Known Limitations
 
-- The Windows adaptation layer has not been verified on real hardware
+- The Windows,Linux adaptation layer has not been verified on real hardware
 - The `PersistentPool` WAL protects allocation metadata only; transactional data-area updates (shadow paging) are not yet implemented
 - Output from the `GuardHeap` signal handler is restricted by async-signal-safety and goes to standard error only, not to the log file
 - The `SlabAllocator` thread-local cache is a simplified design, not a strict lock-free per-CPU cache
