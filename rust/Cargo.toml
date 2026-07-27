@@ -1,0 +1,16 @@
+[package]
+name = "heapforge"
+version = "1.0.0"
+edition = "2021"
+description = "A pluggable memory-strategy engine: allocators, safety instrumentation, fragmentation analysis, persistent pools / 可插拔内存策略引擎"
+license = "MIT"
+
+[dependencies]
+libc = "0.2"
+
+[[example]]
+name = "demo"
+path = "examples/demo.rs"
+
+[profile.release]
+debug = true
