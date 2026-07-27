@@ -186,7 +186,7 @@ pool.flush(index);
 
 ## 已知限制
 
-- Windows 适配层未经过真机验证
+- Windows、Linux 适配层未经过真机验证
 - `PersistentPool` 的 WAL 仅保护分配元数据；数据区内容的事务化（shadow paging）尚未实现
 - `GuardHeap` 信号处理器内的现场输出受异步信号安全约束，仅写入标准错误，不进入日志文件
 - `SlabAllocator` 的 thread-local 缓存为简化实现，非严格意义的 per-CPU 无锁缓存
